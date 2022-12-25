@@ -157,7 +157,7 @@
     </section>
     <!-- /Lugar y fecha -->
     <!-- Become a speaker -->
-    <section id="become-speaker" class="py-2">
+    <section id="become-speaker" class="py-3">
       <div class="container">
         <div class="row">
           <div class="col text-uppercase text-center">
@@ -167,15 +167,26 @@
         </div>
         <div class="row">
           <div class="col text-center">
-            <p>Inscríbete como orador para dar una charla ignite. Cuéntanos de que quieres hablar.</p>
+            <p>Inscríbete como orador para dar una <abbr data-bs-toggle="tooltip" data-bs-title="Charla de 5 minutos">charla ignite</abbr>. Cuéntanos de que quieres hablar.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 offset-lg-2 col-12 pb-2">
-            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            <input type="text" class="form-control" placeholder="Apellidos y Nombres" aria-label="Apellido">
           </div>
-          <div class="col-lg-4 col-12">
-            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+          <div class="col-lg-4 col-12 pb-2">
+            <input type="text" class="form-control" placeholder="E-mail" aria-label="Apellido">
+          </div>
+        </div>
+        <div class="row pb-3">
+          <div class="col-lg-8 offset-lg-2 col-12">
+            <textarea class="form-control" placeholder="¿Sobre que quieres hablar?" id="floatingTextarea" rows="3"></textarea>
+            <small class="form-text text-muted">Por favor, incluya un título para su charla</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 d-grid gap-2">
+            <button class="btn btn-compTicket">Enviar</button>
           </div>
         </div>
       </div>
@@ -209,6 +220,7 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <!-- /Bootstrap JS -->
+  <script src="index.js"></script>
 </body>
 
 </html>
