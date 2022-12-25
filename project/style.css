@@ -66,6 +66,14 @@
   padding-bottom: 70px;
 } */
 
+#place-time {
+  background-color: #212529;
+}
+
+#place-time .secCol {
+  color: white;
+}
+
 #footer{
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
 }
