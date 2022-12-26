@@ -4,8 +4,6 @@
   }
 } */
 
-
-
 #headerNav img {
   width: 100px;
 }
@@ -26,6 +24,10 @@
 
 .text-resaltado {
   color: #d54598 !important;
+}
+
+#main {
+  margin-top: 114px;
 }
 
 #main .carousel-inner img {
