@@ -32,6 +32,15 @@
   background-color: #871e5a;
 }
 
+.btn-modalComp {
+  background-color: #d42c8f !important;
+  color: white !important;
+}
+
+.btn-modalComp:hover {
+  background-color: #871e5a !important;
+}
+
 .text-resaltado {
   color: #d54598 !important;
 }

@@ -22,7 +22,8 @@
   <div id="demo" class="container-fluid fixed-top">
     <div class="row">
       <div class="col">
-        <p>Este sitio web es una demo, por favor no ingrese información sensible.</p> 
+        <p class="d-none d-md-block">Este sitio web es una demo, por favor no ingrese información sensible.</p>
+        <p>Demo</p>
       </div>
     </div>
   </div>
@@ -69,14 +70,13 @@
               </div>
             </div>
             <div class="form-group mb-2">
-              <label for="amount">Monto a pagar</label>
-              <input type="text" class="form-control" id="amount" placeholder="0.00">
+              <h6 for="amount">Monto a pagar: </h6>
             </div>
           </form>
         </div>
-        <div class="modal-footer mb-2">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-compTicket">Comprar</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary w-25" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-modalComp w-25">Pagar</button>
         </div>
       </div>
     </div>
