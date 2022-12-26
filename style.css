@@ -4,6 +4,16 @@
   }
 } */
 
+#demo {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#headerNav {
+  margin-top: 24px;
+}
+
 #headerNav img {
   width: 100px;
 }
@@ -27,7 +37,7 @@
 }
 
 #main {
-  margin-top: 114px;
+  margin-top: 115px;
 }
 
 #main .carousel-inner img {
