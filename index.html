@@ -18,6 +18,65 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#headerNav" data-bs-offset="115">
+  <!-- Modal Comprar -->
+  <div class="modal fade" id="compraModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="paymentModalLabel">Comprar entradas</h5>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="input-group">
+              <label class="input-group-text" for="inputGroupSelect01">Entradas</label>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Seleccione</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cardholderName">Correo electrónico</label>
+              <input type="text" class="form-control" id="emailName" placeholder="Dirección de email">
+            </div>
+
+            <div class="form-group">
+              <label for="cardholderName">Nombre del titular</label>
+              <input type="text" class="form-control" id="cardholderName" placeholder="Nombres y Apellidos">
+            </div>
+            <div class="form-group">
+              <label for="cardNumber">Número de tarjeta</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="expirationDate">Fecha de vencimiento</label>
+                <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv" placeholder="123">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="amount">Monto a pagar</label>
+              <input type="text" class="form-control" id="amount" placeholder="0.00">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-compTicket">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal Comprar -->
+  
   <!-- Header -->
   <nav id="headerNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -44,7 +103,7 @@
             <a class="nav-link" href="#become-speaker">Conviértete en orador</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-resaltado" href="#">Comprar tickets</a>
+            <button class="btn btn-compTicket" data-bs-toggle="modal" data-bs-target="#compraModal">Comprar tickets</button>
           </li>
         </ul>
       </div>
@@ -85,7 +144,7 @@
                   para ti. Te esperamos.
                 </p>
                 <a class="btn btn-outline-light" href="#become-speaker">Quiero ser orador</a>
-                <button class="btn btn-compTicket">Comprar tickets</button>
+                <button class="btn btn-compTicket" data-bs-toggle="modal" data-bs-target="#compraModal">Comprar tickets</button>
               </div>
             </div>
           </div>
@@ -150,7 +209,7 @@
             <p>
               Lima es una ciudad con una rica historia y cultura que la convierten en un destino atractivo para los turistas. Su Centro Histórico es conocido por su arquitectura colonial, incluyendo la Plaza de Armas, la Plaza San Martín y la Catedral. Además, la herencia prehispánica de la ciudad puede ser apreciada en huacas como la Huaca Pucllana y el Santuario Histórico de Pachacámac, así como en los museos de arqueología y antropología. Los distritos de Barranco y Miraflores son populares por sus atracciones turísticas, incluyendo bares, cafés y una vibrante vida nocturna en el segundo. Finalmente, la gastronomía peruana es reconocida internacionalmente y Lima es un destino privilegiado para los amantes de la comida.
             </p>
-            <a class="btn btn-outline-light" href="#">Conoce más</a>
+            <a class="btn btn-outline-light" href="https://visitalima.pe/">Conoce más</a>
           </div>
         </div>
       </div>
